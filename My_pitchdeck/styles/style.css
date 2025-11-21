@@ -1,0 +1,126 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+
+.deck {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+/* Slides */
+.slide {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  transition: transform 0.7s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slide img.slide-image {
+  max-width: 300px;
+  margin-top: 20px;
+}
+
+/* Slide Backgrounds */
+#slide1 { background: linear-gradient(135deg, #4A90E2, #7ED957); color: white; }
+#slide2 { background: linear-gradient(135deg, #FF7E5F, #FEB47B); color: white; }
+#slide3 { background: linear-gradient(135deg, #6A82FB, #FC5C7D); color: white; }
+#slide4 { background: linear-gradient(135deg, #43CEA2, #185A9D); color: white; }
+#slide5 { background: linear-gradient(135deg, #F7971E, #FFD200); color: white; }
+
+.slide h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.slide h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.slide p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin-bottom: 1rem;
+}
+
+.slide ul {
+  list-style: disc;
+  text-align: left;
+  max-width: 500px;
+}
+
+/* Feature Cards */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.feature-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.feature-card i {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.feature-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.feature-card p {
+  font-size: 0.9rem;
+}
+
+/* Button */
+button {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #333;
+  transition: transform 0.2s, background 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background-color: #f0f0f0;
+}
+
+/* Navigation */
+.nav-buttons {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1rem;
+}
