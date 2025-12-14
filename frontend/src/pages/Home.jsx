@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../components/Navbar";
+ import Navbar from "../components/Navbar";
 
 const subjects = [
   { id: 1, name: "Mathematics", color: "bg-yellow-400" },
@@ -14,9 +14,9 @@ const Home = () => {
     alert(`You selected ${subject.name}! Explore tutoring sessions for this subject.`);
   };
 
-  return (
-    <div className="min-h-screen bg-gradient-to-r from-purple-100 via-purple-200 to-purple-300 flex flex-col">
-      <Navbar />
+  return (    
+  <div className="min-h-screen bg-gradient-to-r from-purple-100 via-purple-200 to-purple-300 flex flex-col">
+      
       <main className="flex-grow container mx-auto px-6 py-16 flex flex-col items-center text-center">
         <h1 className="text-5xl font-bold text-purple-900 mb-4">
           Welcome to CBC Peer Tutoring

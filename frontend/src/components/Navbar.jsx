@@ -14,13 +14,13 @@ const Navbar = () => {
       <div className="space-x-4">
         <Link to="/" className={linkClass("/")}>Home</Link>
         <Link to="/about" className={linkClass("/about")}>About</Link>
+        <Link to="/login" className={linkClass("/login")}>Login</Link>
+        <Link to="/register" className={linkClass("/register")}>Register</Link>
         <Link to="/dashboard" className={linkClass("/dashboard")}>Dashboard</Link>
         <Link to="/journal" className={linkClass("/journal")}>Journal</Link>
         <Link to="/resources" className={linkClass("/resources")}>Resources</Link>
         <Link to="/sessions" className={linkClass("/sessions")}>Sessions</Link>
-        <Link to="/login" className={linkClass("/login")}>Login</Link>
-        <Link to="/register" className={linkClass("/register")}>Register</Link>
-      </div>
+        </div>
     </nav>
   );
 };
